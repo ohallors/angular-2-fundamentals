@@ -7,6 +7,8 @@ import {SeedApp} from './app/seed-app';
 import {TodoService} from "./app/components/todo/todo-service";
 import {TodoList} from "./app/components/todo/todo-list";
 import {SearchPipe} from "./app/components/todo/search-pipe";
+import {StatusSelector} from "./app/components/about/status-selector";
+import {SearchBox} from "./app/components/about/search-box";
 
 bootstrap(SeedApp, [
   HTTP_PROVIDERS,
@@ -14,6 +16,8 @@ bootstrap(SeedApp, [
   provide(LocationStrategy, {useClass: HashLocationStrategy}),
   TodoService,
   TodoList,
-  SearchPipe
+  SearchPipe,
+  StatusSelector,
+  SearchBox
 ])
 .catch(err => console.error(err));

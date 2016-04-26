@@ -5,7 +5,14 @@ export class TodoService {
     todos = [
         new TodoModel("eat"),
         new TodoModel("sleep"),
-        new TodoModel("code"),
+        new TodoModel("code", "completed"),
+        new TodoModel("walk"),
+        new TodoModel("talk", "completed"),
+        new TodoModel("record"),
+        new TodoModel("swim", "completed"),
+        new TodoModel("party"),
+        new TodoModel("drink"),
+        new TodoModel("play"),
     ];
 
     addTodo(todo:TodoModel) {

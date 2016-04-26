@@ -1,4 +1,6 @@
 <h3>About Component</h3>
 <p>This is the about component!</p>
+<search-box (update)="term = $event"></search-box>
 <todo-input></todo-input>
-<todo-list></todo-list>
+<status-selector (select)="status = $event"></status-selector>
+<todo-list [status]="status" [term]="term"></todo-list>
